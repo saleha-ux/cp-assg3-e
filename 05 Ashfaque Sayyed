@@ -1,0 +1,57 @@
+/*
+  Roll No.: 05
+  Student Name:ASHFAQUE SAYYED
+  Program Title:PRINT PASCAL TRIANGLE USING RECURSION FUNCTION
+
+  Task Given By:
+    - Roll No. of Assignee:09
+    - Assignee Name:ALZAID KHAN
+*/
+
+#include <stdio.h>
+
+int binomialCoefficient(int n, int r) 
+{
+    if (r == 0 || r == n)
+        return 1;
+    return binomialCoefficient(n - 1, r - 1) + binomialCoefficient(n - 1, r);
+}
+
+void printPascalsTriangle(int rows) 
+{
+    for (int i = 0; i < rows; i++) 
+    {
+        
+        for (int j = 0; j < rows - i - 1; j++) 
+        {
+            printf(" ");
+        }
+        
+        for (int j = 0; j <= i; j++) 
+        {
+            printf("%d ", binomialCoefficient(i, j));
+        }
+        printf("\n");
+    }
+}
+
+int main()
+ {
+    int rows;
+    printf("Enter the number of rows for Pascal's Triangle: ");
+    scanf("%d", &rows);
+
+    printPascalsTriangle(rows);
+
+    return 0;
+}
+ 
+// OUTPUT 
+
+Enter the number of rows for Pascal's Triangle: 5
+    1 
+   1 1 
+  1 2 1 
+ 1 3 3 1 
+1 4 6 4 1 
+
