@@ -1,11 +1,13 @@
-/*Roll No- 45
-Student name - Zoya Shaikh
-Program Title- To find the largest number and subtract with there sum
+/*/*
+  Roll No.:45
+  Student Name: Zoya shaikh
+  Program Title:To find the largest number and subtract with there sum
 
-Task given by 
-Roll No. of assignee-13
-Assignee Name = Shaikh Firdaus 
+  Task Given By:
+    - Roll No. of Assignee:13
+    - Assignee Name: Shaikh Firdaus 
 */
+
 #include <stdio.h>
 
 int main() {
@@ -51,13 +53,3 @@ int main() {
 
     return 0;
 }
-/*
-Output
-Enter the number of elements: 3
-Enter number 1: 2
-Enter number 2: 3
-Enter number 3: 4
-Largest number: 4
-Sum of numbers: 9
-Result (largest - sum): -5
-*/
