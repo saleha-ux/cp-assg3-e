@@ -146,3 +146,32 @@ int main()
     printf("\nThank you for using the Matrix Calculator Program. Goodbye!\n");
     return 0;
 }
+/*
+   OUTPUT:
+
+  =========================================
+  Welcome to Matrix Calculator Program!
+=========================================
+Select an operation to perform:
+1. Matrix Addition
+2. Matrix Subtraction
+3. Matrix Multiplication
+4. Matrix Transpose
+-----------------------------------------
+Enter your choice (1-4): 1
+
+Enter dimensions of the matrices (rows and columns): 2 2
+
+Enter elements of Matrix A:
+1 2
+3 4
+
+Enter elements of Matrix B:
+1 2
+3 4
+
+Result of Matrix Addition:
+2 4 
+6 8 
+
+*/
